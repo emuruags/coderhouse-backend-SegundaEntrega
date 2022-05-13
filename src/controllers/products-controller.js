@@ -4,7 +4,8 @@ const pathMongoDao = '../daos/products/products-mongo.dao.js';
 const pathFirebaseDao = '../daos/products/products-firebase.dao.js';
 // const module = toString(process.env.DAO) === 'firebase' ? await import(pathFirebaseDao) :  await import(pathMongoDao);
 
- const module = await import(pathFirebaseDao);
+ //const module = await import(pathFirebaseDao);
+ const module = await import(pathMongoDao);
 
 export const getProducts = ( async (req, res) => {
 
